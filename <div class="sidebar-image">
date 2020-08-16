@@ -1,0 +1,21 @@
+<div class="sidebar-image"> 
+<p class="sidebar-caption">14:50</p> 
+</div> 
+
+.sidebar-image { 
+    background-image: url(./images/avatar.jpeg); 
+    width: 300px; 
+    height: 200px; 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+ } 
+ 
+ .sidebar-caption { 
+     position: absolute; 
+     top: 160px; right: 3px; 
+     background-color: black; 
+     color: white; 
+     opacity: 0.75; 
+     padding: 0 3px; 
+} 

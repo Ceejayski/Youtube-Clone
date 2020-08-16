@@ -6,6 +6,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 1;
+    top: 0px;
 }
 
 .navbarItems {
@@ -68,24 +69,19 @@ nav {
 
 li {
     list-style-type: none;
-    padding: 10px;
+    padding: 5px;
     display: inline;
 }
 
 .video,
 .title,
 .description {
-    width: 70%;
+    width: 60%;
     float: left;
 }
 
 iframe {
     width: 100%;
-}
-
-aside {
-    width: 28%;
-    float: right;
 }
 
 
