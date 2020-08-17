@@ -59,7 +59,7 @@ i {
 	display: flex;
 }
 
-.search-input {
+.searchTerm {
 	width: 100%;
 	border: 1px solid #aaa;
 	border-right: none;
@@ -68,7 +68,7 @@ i {
 	border-radius: 2px 0 0 2px;
 }
 
-.search-input:focus {
+.searchTerm:focus {
 	color: #606060;
 }
 
