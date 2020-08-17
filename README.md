@@ -3,7 +3,7 @@
 # Youtube-Clone
 > This project consists of building an HTML document that matches the appearance of youtube [video player page](https://www.youtube.com/watch?v=FSehPxS_la8).
 
-![screenshot](./images/youtube_clone.png)
+![screenshot](./images/youtubeCloneScreenshot.png)
 ## Project Requirements
 
 ### Navigation bar
