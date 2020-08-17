@@ -1,142 +1,182 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>
-        Youtube Clone
-    </title>
-    <link href="fonts/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link href="css/style.css" rel="stylesheet">
-
+  <title>Custom Video Player - Youtube Replica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
 </head>
 
 <body>
-    <nav >
-        <div class="navbarItems">
-            <i class="fa fa-bars" id="hamburger"></i>
-            <img class="logo" src="images/YouTube-Logo.wine.png">
+  <nav class="navbar">
+    <div class="navbar-items">
+      <i id="menu-icon" class="material-icons">menu</i>
+      <img class="logo" src="images/youtube.png">
+    </div>
+    <div class="navbar-items">
+      <div class="wrap">
+        <div class="search">
+          <input type="text" class="searchTerm" placeholder="Search">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
         </div>
-        <div class="navbarItems">
-            <div class="wrap">
-                <div class="searchBar">
-                    <input type="text" class="searchInput" placeholder="Search">
-                    <button class="searchButton">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
+      </div>
+    </div>
+    <div class="navbar-items">
+      <div class="notification">
+        <i id="upload-icon" class="fas fa-upload"></i>
+      </div>
+      <div class="notification">
+        <i id="apps-icon" class="material-icons">apps</i>
+      </div>
+      <div class="notification">
+        <i id="notification-icon" class="fas fa-bell"></i>
+      </div>
+      <div class="notification">
+        <i id="user-icon" class="far fa-user-circle"></i>
+      </div>
+    </div>
+  </nav>
+  <section class="container">
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+        <section class="description">
+          <section class="video-details">
+            <h1>Embedded Video Player</h1>
+            <section class="video-socials">
+              <section class="views">
+                <span class="count">
+                  1.1M views •
+                </span>
+                <span class="date">
+                  Aug 11, 2020
+                </span>
+              </section>
+              <div class="flex"></div>
+
+              <section class="socials-btn">
+                <i class="material-icons">thumb_up</i>
+                <span class="btn-value">5.6K</span>
+                <i class="material-icons">thumb_down</i>
+                <span class="btn-value">333</span>
+                <i class="material-icons">playlist_add</i>
+                <span class="btn-value">SAVE</span>
+                <i class="fa fa-share"></i>
+                <span class="btn-value">SHARE</span>
+              </section>
+              <i class="fa fa-ellipsis-h"></i>
+            </section>
+          </section>
+          <section class="channel-details">
+            <div class="channel">
+              <img class="channel-icon"src="images/channel.JPG" alt="Avatar">
+              <div class="channel-name">
+                <span style="font-size: 1;"><b>Microverse Projects</b></span>
+                <span class="subscribers"> 1.1M subscribers </span>
+              </div>
+              <div class="subscribe"><button class="subscribe-button">subscribe</button></div>
             </div>
-
-        </div>
-        <div class="navbarItems">
-            <div class="right">
-                <i id="upload-icon" class="fas fa-upload"></i>
+          </section>
+          <section class="more-details">
+            <div class="video-description">
+              <span>FOR HONOR Full Movie Cinematic 4K ULTRA HD Samurai Vs Viking Vs Knight All Cinematics Trailers</span>
             </div>
-            <div class="right"><i id="apps-icon" class="material-icons">apps</i></div>
-            <div class="right"><i id="notification-icon" class="fas fa-bell"></i></div>
-            <div class="right"><i id="user-icon" class="far fa-user-circle"></i></div>
+            <div class="showmore-span">
+              <span class="show-more">
+                show more
+              </span>
+            </div>
+          </section>
+      </section>
+      <div class="border"></div>
+      <section class="comment">
+        <h3>
+          583 comments
+        </h3>
+        <div class="sort">
+          <i class="material-icons">sort</i>
+          <span>SORT BY</span>
         </div>
-        </nav>
-        <section class="container">
-            <section class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      </section>
+      <section class="sidebar">
+        <aside>
+          <div class="next">
+            <div class="autoplay">
+              <h3>
+                Up next
+              </h3>
+              <span>
+                AUTOPLAY
+              <i class="fa fa-toggle-on" aria-hidden="true"></i>
+              </span>
+            </div>
+            <section class="sidebar-videos">
+              <img class="thumbnail" src="images/thumbnail.JPG">
+              <div class="item-details">
+                <p class="item-title">Hardest games Ever to be played</p>
+                <p class="item-channel">Gamers Repubulic</p>
+                <p class="item-count">8M views • 15 Aug 2020</p>
+              </div>
             </section>
-            <section class="title">
-                <h4>Contributing to Open Source Part I: The Easy Way</h4>
-                <p><ul>
-                    <li>59,474 views•Feb 27, 2014</li>
-                    <li><i class="fa fa-thumbs-up"></i>  439</li>
-                    <li><i class="fa fa-thumbs-down"></i>   90</li>
-                    <li><i class="fa fa-share"></i>  Share</li>
-                    <li><i class="fa fa-bars"></i>  Save</li>
-                    <li><i class="fa fa-ellipsis-h"></i></li>
-                </ul></p>
-                <hr>
-            </section>
-            <section class="description">
-                <ul>
-                    <li>
-                        <img  alt="" width="48" src="https://yt3.ggpht.com/a/AATXAJyfp0akR7PCq72FcsHL1DrLUbzqKet6_ZK6Nw=s48-c-k-c0xffffffff-no-rj-mo">
-                        
-                    </li>
-                    <li>The Odin Project</li>
-                    <li><img src="images/subscribe.jpg" width="48"></li>
-                </ul>
-            </section>
-            <section class="sidebar">
-                <aside>
-                    <ul>
-                        <li>
-                            <img src="images/thumbnail.JPG">
-                            <li><h5>thumbnail Title </h5>
-                            <p>
-                                Fast & Furious
-                                <br>
-                                400k views- 3 months ago
-                            </p>
-                            </li>
-                        </li>
-
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="images/thumbnail.JPG">
-                            <li><h5>thumbnail Title </h5>
-                            <p>
-                                Fast & Furious
-                                <br>
-                                400k views- 3 months ago
-                            </p>
-                            </li>
-                        </li>
-
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="images/thumbnail.JPG">
-                            <li><h5>thumbnail Title </h5>
-                            <p>
-                                Fast & Furious
-                                <br>
-                                400k views- 3 months ago
-                            </p>
-                            </li>
-                        </li>
-
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="images/thumbnail.JPG">
-                            <li><h5>thumbnail Title </h5>
-                            <p>
-                                Fast & Furious
-                                <br>
-                                400k views- 3 months ago
-                            </p>
-                            </li>
-                        </li>
-
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="images/thumbnail.JPG">
-                            <li><h5>thumbnail Title </h5>
-                            <p>
-                                Fast & Furious
-                                <br>
-                                400k views- 3 months ago
-                            </p>
-                            </li>
-                        </li>
-
-                    </ul>
-                </aside>
-            </section>
-            
-
-        </section>
-    
+          </div>
+          <section class="sidebar-videos">
+            <img class="thumbnail" src="images/thumbnail.JPG">
+            <div class="item-details">
+              <p class="item-title">Hardest games Ever to be played</p>
+              <p class="item-channel">Gamers Repubulic</p>
+              <p class="item-count">8M views • 15 Aug 2020</p>
+            </div>
+          </section>
+          <section class="sidebar-videos">
+            <img class="thumbnail" src="images/thumbnail.JPG">
+            <div class="item-details">
+              <p class="item-title">Hardest games Ever to be played</p>
+              <p class="item-channel">Gamers Repubulic</p>
+              <p class="item-count">8M views • 15 Aug 2020</p>
+            </div>
+          </section>
+          <section class="sidebar-videos">
+            <img class="thumbnail" src="images/thumbnail.JPG">
+            <div class="item-details">
+              <p class="item-title">Hardest games Ever to be played</p>
+              <p class="item-channel">Gamers Repubulic</p>
+              <p class="item-count">8M views • 15 Aug 2020</p>
+            </div>
+          </section>
+          <section class="sidebar-videos">
+            <img class="thumbnail" src="images/thumbnail.JPG">
+            <div class="item-details">
+              <p class="item-title">Hardest games Ever to be played</p>
+              <p class="item-channel">Gamers Repubulic</p>
+              <p class="item-count">8M views • 15 Aug 2020</p>
+            </div>
+          </section>
+          <section class="sidebar-videos">
+            <img class="thumbnail" src="images/thumbnail.JPG">
+            <div class="item-details">
+              <p class="item-title">Hardest games Ever to be played</p>
+              <p class="item-channel">Gamers Repubulic</p>
+              <p class="item-count">8M views • 15 Aug 2020</p>
+            </div>
+          </section>
+          <section class="sidebar-videos">
+            <img class="thumbnail" src="images/thumbnail.JPG">
+            <div class="item-details">
+              <p class="item-title">Hardest games Ever to be played</p>
+              <p class="item-channel">Gamers Repubulic</p>
+              <p class="item-count">8M views • 15 Aug 2020</p>
+            </div>
+          </section>
+        </aside>
+      </section>
+  
+  </section>
 </body>
 
 </html>
