@@ -141,11 +141,10 @@ i {
 .views{
 	display: inline-block;
 	font-size: 0.9rem;
-	font-weight: 400rem;
+	font-weight: 400;
 }
 .flex-grow {
 	flex: 1;
-	flex-basis: 1e-9px;
 }
 .socials-btn{
     font-size: 0.8rem;
@@ -239,10 +238,6 @@ i {
 .comment h3{
 	align-self: flex-start;
 	font-size: 1.1rem;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 	font-weight: 500;
 }
 .sort{
@@ -250,7 +245,7 @@ i {
 	align-items: center;
 	margin-right: 4px;
 	font-weight: 400;
-	font-size: 1.1;
+	font-size: 1.1rem;
 }
 .sort span{
 	padding-left: 5px;
@@ -297,7 +292,7 @@ aside{
 	width:100%;
 }
 .item-title{
-	font-weight: 550;
+	font-weight: 500;
 	margin:0;
 	font-size:0.9rem;
 	padding-bottom: 2px;
