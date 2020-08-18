@@ -11,6 +11,13 @@ div, h4, h3, h1{
 	padding: 0;
 	background: transparent;
 }
+.link-color{
+	color:#606060;
+}
+
+.flex{
+	display: flex;
+}
 
 #menu-icon {
 	display: flex;
@@ -28,7 +35,6 @@ i {
 
 .navbar {
 	background-color: white;
-	display: flex;
 	font-size: 30px;
 	justify-content: space-between;
 	position: fixed;
@@ -37,7 +43,6 @@ i {
 }
 
 .navbar-items {
-	display: flex;
 	padding: 5px;
 }
 
@@ -46,8 +51,6 @@ i {
 	padding-left: 1rem;
 }
 .notification {
-	/* padding-top: 0.25rem; */
-	display: flex;
 	padding-right: 1.5rem;
 	font-size: 1.2rem;
 	align-items: center;
@@ -56,7 +59,6 @@ i {
 .search {
 	width: 100%;
 	position: relative;
-	display: flex;
 }
 
 .searchTerm {
@@ -66,11 +68,9 @@ i {
 	padding: 5px 5px 5px 15px;
 	height: 20px;
 	border-radius: 2px 0 0 2px;
+	outline: #606060;
 }
 
-.searchTerm:focus {
-	color: #606060;
-}
 
 .searchButton {
 	width: 75px;
@@ -110,6 +110,7 @@ i {
 }
 
 .video iframe {
+	border: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -132,7 +133,6 @@ i {
 	font-size: 1.4rem;
 }
 .video-socials{
-	display:flex;
 	flex-direction: row;
 	align-items: center;
 	padding-top: 10px;
@@ -142,34 +142,33 @@ i {
 	display: inline-block;
 	font-size: 0.9rem;
 	font-weight: 400rem;
-	color: #606060
 }
-.flex {
+.flex-grow {
 	flex: 1;
 	flex-basis: 1e-9px;
 }
 .socials-btn{
-	color: #606060;
     font-size: 0.8rem;
-    display: flex;
     align-items: center;
 }
+.share-btn{
+	cursor: pointer;
+	border: 0;
+	background: transparent;
+	outline: none;
+}
 .btn-value{
-	display: block;
-	padding-right: 10px;
+	display: inline-block;
 	padding-left: 10px;
+	padding-right: 10px;
 }
 .channel-details{
-	display: flex;
 	flex-direction: row;
 	margin-bottom: 12px;
 	padding-top: 16px;
 	width: 100%;
 }
 .channel{
-	display: flex;
-	flex: 1;
-	flex-basis: 1e-9px;
 	flex-direction: row;
 }
 .channel-icon{
@@ -180,18 +179,13 @@ i {
 	margin-right: 16px;
 }
 .channel-name{
-	flex: 1;
-	flex-basis: 1e-9px;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 .subscribers{
-	color: #606060;
     font-size: 0.8rem;
 }
 .subscribe{
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin-right: 4px;
@@ -228,7 +222,6 @@ i {
 .show-more{
 	display: block;
 	align-items: center;
-	color: #606060;
 	font-size: 1rem;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -240,7 +233,6 @@ i {
 .comment{
 	width: 100%;
 	margin-bottom: 24px;
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
@@ -252,15 +244,11 @@ i {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 	font-weight: 500;
-	flex: 1;
-	flex-basis: 1e-9px;
 }
 .sort{
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin-right: 4px;
-	color:#606060;
 	font-weight: 400;
 	font-size: 1.1;
 }
@@ -268,7 +256,6 @@ i {
 	padding-left: 5px;
 }
 .sidebar{
-	display: flex;
 	flex-direction: column;
 	padding-left: 50px;
 	width: 86%;
@@ -278,7 +265,6 @@ aside{
 	margin-right: 20px;
 }
 .autoplay{
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
@@ -286,12 +272,10 @@ aside{
 	font-size: 1rem;
 	font-weight: 400;
 	color:#030303;
-	flex: 1;
-	flex-basis: 1e-9px;;
 }
 .autoplay span{
 	float: right;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: 400;
 	color:#606060;
 }
@@ -301,14 +285,12 @@ aside{
 	margin-bottom: 16px;
 }
 .sidebar-videos{
-	display:flex;
 	flex-direction: row;
 	height:auto;
 	word-wrap: break-word;
 
 }
 .thumbnail {
-	display: flex;
 	margin: 2%;
 	max-width: 10rem;
 	height:56%;
